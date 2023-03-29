@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Home - Soulfit</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><button class="nav-button"><a href="#">Home</a></button></li>
+        <li><button class="nav-button"><a href="about/index.html">About</a></button></li>
+        <li><button class="nav-button"><a href="contact/index.html">Contact</a></button></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero">
+    <div class="text-wrapper">
+      <h1 class="hero">Fitness Simplified</h1>
+      <p>Unlock your body</p>
+    </div>
+    <div class="img-wrapper">
+      <picture>
+        <source media="(min-width: 769px)" srcset="images/hero169.jpg">
+        <source media="(min-width: 381px)" srcset="images/hero43.jpg">
+        <source media="(max-width: 380px)" srcset="images/hero11.jpg">
+        <img src="images/hero2000px.jpg" alt="Man swinging battle ropes in an empty parking garage at dawn."
+          width="2000" height="1336">
+      </picture>
+      <!-- <img src="/images/hero2000px.jpg" alt="Man swinging battle ropes"> -->
+    </div>
+
+  </div>
+  <main>
+    <div class="title">
+      <h2>Fitness is messy.</h2>
+      <p> We're here to clean it up.</p>
+    </div>
+    <section class="cards">
+      <h2 class="sr-only">card section</h2>
+      <a href="" class="card"><img src="images/mindset11.jpg" alt="focused man" width="500" height="500" loading="lazy">
+        <div class="text-wrapper">
+          <h3>Mind</h3>
+        </div>
+      </a>
+      <a href="" class="card"><img src="images/nutrition11.jpg" alt="healthy food ingredients on a cutting board"
+          width="500" height="500" loading="lazy">
+        <div class="text-wrapper">
+          <h3>Food</h3>
+        </div>
+      </a>
+      <a href="" class="card"><img src="images/body11.jpg" alt="man doing a pull up" width="500" height="500"
+          loading="lazy">
+        <div class="text-wrapper">
+          <h3>Body</h3>
+        </div>
+      </a>
+      <a href="" class="card"><img src="images/soul11.jpg" alt="woman meditating in a desert of sand dunes" width="500"
+          height="500" loading="lazy">
+        <div class="text-wrapper">
+          <h3>Soul</h3>
+        </div>
+      </a>
+    </section>
+    <aside class="panel">
+      <div class="q-box panel-text">
+        <p>What does it <strong>mean</strong> to be fit?</p>
+        <article>
+          <p><em>Fitness</em> has become a messy word. With so many different ideas and conflicting information out
+            there, we've tried to make a robust and holistic definition of what it means to be "Fit".</p>
+        </article>
+        <button class="article-button"><a href="#">View Article</a></button>
+      </div>
+      <div class="panel-img">
+        <figure><img src="images/dumbbells600.jpg" alt="Man taking dumbbells off a rack." loading="lazy" height="400"
+            width="600">
+          <figcaption class="sr-only">Take control of your fitness journey.</figcaption>
+        </figure>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <p>Thanks for checking us out!</p>
+  </footer>
+</body>
+
+</html>

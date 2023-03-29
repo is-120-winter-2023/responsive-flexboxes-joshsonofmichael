@@ -1,0 +1,281 @@
+/* General Formatting */
+
+:root {
+  --color-background: #212121;
+  --steel-gray: #595959;
+  --dark: #1c2222;
+  --light: #eeeeee;
+  --mint: #93c47d;
+  --gray: #7d8280;
+  --success: #5ba25e;
+  --warning: #d89126;
+  --danger: #f44336;
+  --gutter: 2rem;
+  --hero-margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background);
+  font-family: "Lato", sans-serif;
+  color: var(--light);
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Header, Nav and Hero */
+header {
+  background-color: var(--black);
+  width: 100vw;
+  z-index: 2;
+}
+
+nav {
+  background-color: var(--dark);
+  z-index: 2;
+  align-items: stretch;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+nav > a {
+  display: inline-block;
+}
+
+.nav-button {
+  background-color: var(--warning);
+  text-decoration: none;
+  border: none;
+  height: 2em;
+  opacity: 100%;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero picture {
+  height: 100%;
+}
+
+.hero img {
+  width: 100%;
+  object-fit: cover;
+  margin-top: var(--hero-margin);
+}
+
+/* .hero > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
+
+.hero .text-wrapper {
+  /* margin-top: 1rem; */
+  position: absolute;
+  inset: 0;
+  text-align: right;
+  padding: 0 var(--gutter);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  top: 0;
+}
+
+.hero h1 {
+  font-size: clamp(1rem, 7vw + 1rem, 5rem);
+  text-shadow: 0.1em 0.1em 0.2em var(--dark);
+}
+.hero p {
+  font-size: 0.5rem;
+  margin-top: var(--hero-margin);
+}
+
+.title {
+  text-align: center;
+}
+/* Main */
+main {
+  align-self: center;
+  max-width: auto;
+  padding: var(--gutter);
+}
+section {
+  padding: 0.2em;
+}
+.cards {
+  height: auto;
+  display: flex;
+  width: auto;
+  position: relative;
+}
+
+.card {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  flex: 1 1 0;
+  filter: grayscale(70%);
+  text-align: center;
+}
+
+.card[href]:hover {
+  filter: brightness(0);
+  filter: grayscale(40%);
+  transition: box-shadow 300ms ease;
+}
+
+.card img {
+  object-fit: cover;
+}
+.card h3 {
+  text-shadow: 0.1em 0.1em 0.2em var(--dark);
+}
+
+.card:hover h3 {
+  color: var(--warning);
+}
+
+.cards .text-wrapper {
+  position: absolute;
+  justify-content: flex-end;
+  inset: 0;
+  text-align: center;
+  padding: 0 var(--gutter);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+footer {
+  background-color: var(--color-background);
+  justify-self: flex-end;
+  align-self: center;
+}
+
+/* Random Elements */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2,
+h3,
+h4 {
+  color: var(--light);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+a[href]:hover {
+  color: var(--light);
+}
+a:visited {
+  color: var(--dark);
+}
+
+button > a {
+  padding: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.q-box {
+  background-color: var(--light);
+  color: var(--dark);
+  /* width: 40vw; */
+  margin: 0 3em;
+  justify-self: center;
+  align-self: center;
+  padding: 1em;
+  border: 1em solid var(--success);
+  max-width: 600px;
+}
+
+.q-box > p {
+  color: inherit;
+}
+
+.article-button {
+  background-color: var(--danger);
+  color: var(--light);
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 10em;
+}
+.article-button > a {
+  color: inherit;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.panel-text {
+  order: 2;
+  max-width: 15em;
+}
+.panel-img {
+  order: 1;
+  min-width: 20em;
+  flex: 1 0 auto;
+}
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+/****** MEDIA QUERIES BELOW ******/
+@media (min-width: 401px) {
+  /*tablet CSS */
+  .panel {
+    display: flex;
+    flex-direction: row;
+  }
+  .panel-text {
+    flex: .5 1 50%;
+    order: 1;
+    flex-shrink: 2;
+  }
+  .panel-img {
+    flex: 1 .5 none;
+    order: 2;
+    
+  }
+}
+
+@media (min-width: 801px) {
+  /*desktop CSS */
+}
