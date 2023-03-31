@@ -10,7 +10,7 @@
   --success: #5ba25e;
   --warning: #d89126;
   --danger: #f44336;
-  --gutter: 2rem;
+  --gutter: 1rem;
   --hero-margin: 0;
 }
 
@@ -31,7 +31,7 @@ body {
 /* Header, Nav and Hero */
 header {
   background-color: var(--black);
-  width: 100vw;
+  
   z-index: 2;
 }
 
@@ -208,7 +208,7 @@ button > a {
   background-color: var(--light);
   color: var(--dark);
   /* width: 40vw; */
-  margin: 0 3em;
+  gap: 2em;
   justify-self: center;
   align-self: center;
   padding: 1em;
@@ -226,7 +226,7 @@ button > a {
   border: none;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-left: 10em;
+  
 }
 .article-button > a {
   color: inherit;
@@ -234,17 +234,16 @@ button > a {
 
 .panel {
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 .panel-text {
   order: 2;
-  max-width: 15em;
+  
 }
 .panel-img {
   order: 1;
-  min-width: 20em;
   flex: 1 0 auto;
+  width: 100%;
 }
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
@@ -270,7 +269,7 @@ button > a {
     flex-shrink: 2;
   }
   .panel-img {
-    flex: 1 .5 none;
+    flex: 1 .5 50%;
     order: 2;
     
   }
