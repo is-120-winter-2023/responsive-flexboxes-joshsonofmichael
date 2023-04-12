@@ -239,11 +239,12 @@ button > a {
 .panel-text {
   order: 2;
   
+  
 }
 .panel-img {
   order: 1;
   flex: 1 0 auto;
-  width: 100%;
+  width: auto;
 }
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
@@ -267,14 +268,24 @@ button > a {
     flex: .5 1 50%;
     order: 1;
     flex-shrink: 2;
+    max-width: 40vw;
   }
   .panel-img {
-    flex: 1 .5 50%;
+    flex: 1 1 0;
     order: 2;
     
+  }
+  .cards  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
 @media (min-width: 801px) {
   /*desktop CSS */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
