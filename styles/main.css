@@ -58,6 +58,11 @@ nav > a {
   border: none;
   height: 2em;
   opacity: 100%;
+  padding: .5em 1em .5em 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero {
