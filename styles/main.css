@@ -306,7 +306,7 @@ button > a {
   justify-self: center;
   align-self: center;
   padding: 1em;
-  border: 1em solid var(--success);
+  border: 1em solid var(--steel-gray);
   max-width: 600px;
 }
 
@@ -314,21 +314,17 @@ button > a {
   color: inherit;
 }
 
-.article-button {
-  background-color: var(--danger);
+.button {
+  background-color: var(--warning);
   color: var(--light);
   border: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  
+
+  padding: 5px 3px 5px 3px;
 }
 .article-button > a {
   color: inherit;
 }
 
-.button {
-  box-sizing: border-box;
-}
 
 .button:hover {
   box-sizing: border-box;
