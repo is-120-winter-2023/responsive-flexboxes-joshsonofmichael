@@ -325,7 +325,10 @@ button > a {
   color: inherit;
 }
 
-
+article {
+  margin-bottom: 1em;
+  
+}
 .button:hover {
   box-sizing: border-box;
 }
@@ -333,6 +336,7 @@ button > a {
 .panel {
   display: flex;
   flex-direction: column;
+  gap: 1em;
 }
 .panel-text {
   order: 2;
@@ -358,13 +362,13 @@ button > a {
   /*tablet CSS */
   .panel {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .panel-text {
     flex: .5 1 50%;
     order: 1;
     flex-shrink: 2;
-    max-width: 40vw;
+    
   }
   .panel-img {
     flex: 1 1 0;
@@ -383,5 +387,12 @@ button > a {
   .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .panel {
+    flex-direction: row;
+  }
+  .panel-text {
+    max-width: 40vw;
   }
 }
