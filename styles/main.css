@@ -120,7 +120,7 @@ body {
 /* Header, Nav and Hero */
 header {
   background-color: var(--black);
-  
+
   z-index: 2;
 }
 
@@ -147,7 +147,7 @@ nav > a {
   border: none;
   height: 2em;
   opacity: 100%;
-  padding: .5em 1em .5em 1em;
+  padding: 0.5em 1em 0.5em 1em;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -327,7 +327,6 @@ button > a {
 
 article {
   margin-bottom: 1em;
-  
 }
 .button:hover {
   box-sizing: border-box;
@@ -365,17 +364,15 @@ article {
     flex-direction: column;
   }
   .panel-text {
-    flex: .5 1 50%;
+    flex: 0.5 1 50%;
     order: 1;
     flex-shrink: 2;
-    
   }
   .panel-img {
     flex: 1 1 0;
     order: 2;
-    
   }
-  .cards  {
+  .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
