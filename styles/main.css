@@ -326,14 +326,20 @@ button > a {
   color: inherit;
 }
 
+.button {
+  background-color: var(--mint);
+}
+
+.button:hover {
+  color: var(--warninq);
+}
+
 .panel {
   display: flex;
   flex-direction: column;
 }
 .panel-text {
   order: 2;
-  
-  
 }
 .panel-img {
   order: 1;
