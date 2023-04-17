@@ -327,11 +327,11 @@ button > a {
 }
 
 .button {
-  background-color: var(--mint);
+  box-sizing: border-box;
 }
 
 .button:hover {
-  color: var(--warninq);
+  box-sizing: border-box;
 }
 
 .panel {
