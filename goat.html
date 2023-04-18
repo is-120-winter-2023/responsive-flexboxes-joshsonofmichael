@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Site to help beginners understand different aspects and disciplines of fitness, including bodybuilding, calisthenics and nutrition. Theories are outlined with backing evidence and studies. ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/icons/favicon-16x16.png">
+  <link rel="manifest" href="../images/icons/site.webmanifest">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>GOAT</title>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <div> <a class="nav-button" href="index.html">Home</a></div>
+        </li>
+        <li>
+          <div><a class="nav-button" href="about/index.html">About</a></div>
+        </li>
+        <li>
+          <div><a class="nav-button" href="contact/index.html">Contact</a></div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <video autoplay muted loop id="myVideo">
+    <source src="videos/cbum.mp4" type="video/mp4">
+  </video>
+  <div class="content">
+    <h1>The G.O.A.T.</h1>
+    <p>Meet Chris Bumstead, four time Mr Olympia and the current reigning champion. Basically the real life Mr. Incredible, he benches freight trains and squats beached oil rigs. </p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+  </div>
+  <script>
+    // Get the video
+    var video = document.getElementById("myVideo");
+    
+    // Get the button
+    var btn = document.getElementById("myBtn");
+    
+    // Pause and play the video, and change the button text
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+</body>
+
+</html>

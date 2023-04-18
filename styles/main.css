@@ -128,6 +128,7 @@ nav {
   background-color: var(--dark);
   z-index: 2;
   align-items: stretch;
+  padding: 1em 0 1em 0;
 }
 
 nav > ul {
@@ -356,6 +357,40 @@ article {
   position: absolute;
 }
 
+/* about page css */
+#myVideo {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  right: 0;
+  bottom: 0;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0) 30%) ;
+  background: black;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  padding-top: 50px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: var(--warning);
+  color: #fff;
+  cursor: pointer;
+}
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
 /****** MEDIA QUERIES BELOW ******/
 @media (min-width: 401px) {
   /*tablet CSS */
